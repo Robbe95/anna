@@ -1,22 +1,11 @@
 <template>
   <div class="flex flex-col gap-8 w-full">
-    <div
+    <SingleImage
       v-for="image in images"
       :key="image.id"
-      class="bg-dark-400
-      text-black
-        shadow-lg
-        border-1px
-      border-gray-500  h-full w-full
-          flex items-center
-        justify-center text-3xl
-        image
-        h-50vh
-        w-full
-      "
+      :image="image"
     >
-      {{ image.id }}
-    </div>
+    </SingleImage>
   </div>
 </template>
 

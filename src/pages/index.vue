@@ -50,13 +50,26 @@ onMounted(() => {
         Anna
       </div>
     </div>
-    <div class="text-base z-10 absolute -top-100vh left-0 z-0">
+    <div id="images" class="text-base z-10 absolute -top-100vh left-0 -z-10">
       <ImagesBackground />
     </div>
   </div>
   <div class="h-100vh ">
   </div>
 </template>
+
+<style scoped>
+#images {
+    -webkit-perspective:300px;
+    -moz-perspective:300px;
+    -webkit-perspective-origin:50% 50%;
+    -moz-perspective-origin:50% 50%;
+    -moz-transform-style: preserve-3d;
+    width:100%;
+    height:100%;
+    perspective: 500;
+}
+</style>
 
 <route lang="yaml">
 meta:
