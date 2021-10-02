@@ -1,5 +1,7 @@
 <template>
-  <div class="p-4 h-50vh">
+  <div
+    class="p-4 h-50vh w-full"
+  >
     <div
       ref="image"
       class="bg-dark-400
@@ -11,6 +13,8 @@
       justify-center text-3xl
       image
       "
+      :style="'top: ' + ( + 50 *(spot - 1)) + 'vh'"
+
       :class="['spot-' + spot, 'order-' + spot]"
     >
       {{ spot }}
@@ -25,6 +29,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const props = defineProps({
   spot: Number,
+  offset: String,
 })
 
 const image = ref(null)
@@ -45,6 +50,7 @@ const selectOrder = () => {
 
 onMounted(() => {
   selectOrder()
+
   const tl = gsap.timeline({
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
@@ -56,6 +62,7 @@ onMounted(() => {
     },
   })
 
+  console.log(`>${props.offset * 2}%`)
   tl.to(image.value, { y: order.value[0], duration: 1 })
     .call(() => moveUpIfSpot(3), null, '>')
     .to(image.value, { y: order.value[1], duration: 1 })

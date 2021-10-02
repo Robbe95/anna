@@ -16,12 +16,12 @@ onMounted(() => {
       end: 'bottom bottom',
       scrub: 1,
       markers: true,
-      snap: {
-        snapTo: snapV,
-        duration: { min: 0.2, max: 1 },
-        delay: 0.2,
-        ease: 'power1.inOut',
-      },
+      // snap: {
+      //   snapTo: snapV,
+      //   duration: { min: 0.2, max: 1 },
+      //   delay: 0.2,
+      //   ease: 'power1.inOut',
+      // },
     },
   })
 
@@ -31,8 +31,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="h-200vh bg-black flex justify-center scroll-trigger overflow-hidden z-10">
-    <div class="text-8xl text-white h-100vh w-full flex items-center justify-center scroll-screen relative z-0">
+  <div class="h-200vh bg-black flex justify-center scroll-trigger overflow-hidden z-0 relative">
+    <div class="text-8xl text-white h-100vh w-full flex items-center justify-center scroll-screen relative z-10">
       <div class="absolute top-0 right-0 z-50 ">
         <div class="h-4 w-screen bg-black">
         </div>
@@ -49,9 +49,9 @@ onMounted(() => {
       <div class="transform name z-20 rotate-90">
         Anna
       </div>
-      <div class="text-base z-10">
-        <ImagesBackground />
-      </div>
+    </div>
+    <div class="text-base z-10 absolute -top-100vh left-0 z-0">
+      <ImagesBackground />
     </div>
   </div>
   <div class="h-100vh ">

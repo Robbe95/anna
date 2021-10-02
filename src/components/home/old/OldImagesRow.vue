@@ -1,14 +1,17 @@
 <template>
-  <div class="flex flex-row gap-8 w-screen px-10">
-    <ImagesRow />
-    <ImagesRow class="mt-20vh" />
-    <ImagesRow class="mt-40vh" />
-    <ImagesRow class="mt-60vh" />
-    <ImagesRow class="mt-80vh" />
+  <div class="">
+    <SingleImage
+      v-for="image in images"
+      :key="image.id"
+      :spot="image.id"
+      :offset="offset"
+    />
   </div>
 </template>
 
 <script setup>
+
+const images = [{ id: 1, spot: 2 }, { id: 2, spot: 3 }, { id: 3, spot: 1 }]
 
 const props = defineProps({
   offset: {
