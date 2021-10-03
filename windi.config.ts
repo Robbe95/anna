@@ -12,6 +12,11 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      colors: {
+        background: '#010516',
+        primary: '#0080ff',
+
+      },
       typography: {
         DEFAULT: {
           css: {

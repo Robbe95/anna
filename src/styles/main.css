@@ -1,4 +1,11 @@
 @import './markdown.css';
+@import 'https://use.typekit.net/uow8wes.css';
+
+@font-face {
+font-family:"proxima-nova";
+src:url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
 
 html,
 body,
@@ -7,6 +14,18 @@ body,
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family:"anna-font";
+  src:url("../fonts/Rogie.woff2") format("woff2");
+}
+
+* {
+  font-family: 'proxima-nova';
+}
+.anna-font {
+  font-family: 'anna-font';
+}
+
 
 html.dark {
   background: #121212;

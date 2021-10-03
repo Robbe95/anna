@@ -3,3 +3,6 @@
     <router-view />
   </main>
 </template>
+
+<style>
+</style>

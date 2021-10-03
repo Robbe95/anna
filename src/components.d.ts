@@ -25,6 +25,7 @@ declare module 'vue' {
     README: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/README.md')['default']
     SingeImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/SingeImage.vue')['default']
     SingleImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/SingleImage.vue')['default']
+    StartAnimation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/StartAnimation/StartAnimation.vue')['default']
   }
 }
 

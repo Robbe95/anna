@@ -1,5 +1,8 @@
 <template>
-  <div class="absolute goto-button min-w-max bg-blue-500 bg-blue-500 py-2 px-4 rounded-3xl text-base text-white flex items-center width-trans justify-center" :style="[showNav ?'width: 250px; max-width: 300px' : 'width: 150px; max-width: 300px' ]">
+  <div
+    class="absolute goto-button min-w-max bg-blue-500 bg-blue-500 py-2 px-4 rounded-3xl text-base text-white flex items-center width-trans justify-center cursor-pointer"
+    :style="[showNav ?'width: 250px; max-width: 300px' : 'width: 150px; max-width: 300px' ]"
+  >
     <transition name="fade" mode="out-in">
       <div v-if="showNav" class="flex flex-row gap-4  relative ">
         <div>Home</div>
