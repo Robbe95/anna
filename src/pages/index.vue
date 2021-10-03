@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
-
+const showNav = ref(false)
 onMounted(() => {
   const snapV = [0, 1]
 
@@ -42,8 +42,12 @@ onMounted(() => {
 
   tlButton.addLabel('start')
     .from('.goto-button', { duration: 1 })
-
-    .to('.goto-button', { x: '40vw', duration: 0.5 })
+    .to('.goto-button', { x: '35vw', duration: 0.5 })
+    .call(() => {
+      showNav.value = !showNav.value
+    }, null, '>',
+    )
+    .to('.goto-button', { duration: 0.1 })
 })
 </script>
 
@@ -75,9 +79,7 @@ onMounted(() => {
     </div>
     <div class="h-100vh">
       <div class="flex items-center justify-center">
-        <div class="bg-blue-500 py-2 px-4 rounded-xl text-base max-w-max goto-button text-white absolute">
-          Goto Site
-        </div>
+        <HomeNavigation :show-nav="showNav" />
       </div>
     </div>
   </div>
