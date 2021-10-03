@@ -21,7 +21,6 @@ onMounted(() => {
       start: 'top top',
       end: 'bottom bottom',
       scrub: 1,
-      markers: true,
       // snap: {
       //   snapTo: snapV,
       //   duration: { min: 0.2, max: 1 },
