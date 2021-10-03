@@ -6,7 +6,7 @@
         <div>Gallery</div>
         <div>Contact</div>
       </div>
-      <div v-else class=" relative">
+      <div v-else class=" relative" @click="gotoWebsite">
         Go to website
       </div>
     </transition>
@@ -14,6 +14,8 @@
 </template>
 
 <script setup>
+const emit = defineEmits(['gotoWebsite'])
+const gotoWebsite = id => emit('gotoWebsite', id)
 
 const props = defineProps({
   showNav: Boolean,
@@ -22,11 +24,11 @@ const props = defineProps({
 
 <style  scoped>
 .width-trans {
-  transition: width 0.3s;
+  transition: width 0.5s;
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s, width 0.5s;
+  transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
