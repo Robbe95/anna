@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollToPlugin)
 
 const showNav = ref(false)
 const gotoWebsite = () => {
-  gsap.to(window, { duration: 5, scrollTo: 2120 })
+  gsap.to(window, { duration: 5, scrollTo: '#content-div' })
 }
 onMounted(() => {
   const snapV = [0, 1]
@@ -82,7 +82,7 @@ onMounted(() => {
       </div>
       <div id="end-point" class="bg-red-500 absolute -bottom-50vh h-50vh w-full"></div>
     </div>
-    <div class="h-100vh content-div">
+    <div id="content-div" class="h-100vh">
       <div class="flex items-center justify-center">
         <HomeNavigation :show-nav="showNav" @gotoWebsite="gotoWebsite" />
       </div>
