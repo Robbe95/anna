@@ -62,7 +62,6 @@ onMounted(() => {
     },
   })
 
-  console.log(`>${props.offset * 2}%`)
   tl.to(image.value, { y: order.value[0], duration: 1 })
     .call(() => moveUpIfSpot(3), null, '>')
     .to(image.value, { y: order.value[1], duration: 1 })

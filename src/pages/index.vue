@@ -27,34 +27,59 @@ onMounted(() => {
 
   tl.addLabel('start')
     .to('.name', { rotation: 0, y: '40vh' })
+  gsap.set('.goto-button', { top: '90vh' })
+
+  const tlButton = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: '.scroll-trigger',
+      pin: '.goto-button',
+      start: 'top top',
+      end: 'bottom bottom-=200px',
+      scrub: 1,
+    },
+  })
+
+  tlButton.addLabel('start')
+    .from('.goto-button', { duration: 1 })
+
+    .to('.goto-button', { x: '40vw', duration: 0.5 })
 })
 </script>
 
 <template>
-  <div class="h-200vh bg-black flex justify-center scroll-trigger overflow-hidden z-0 relative">
-    <div class="text-8xl text-white h-100vh w-full flex items-center justify-center scroll-screen relative z-10">
-      <div class="absolute top-0 right-0 z-50 ">
-        <div class="h-4 w-screen bg-black">
+  <div class="relative">
+    <div class="h-200vh bg-black flex justify-center scroll-trigger overflow-hidden z-0 relative">
+      <div class="text-8xl text-white h-100vh w-full flex items-center justify-center scroll-screen relative z-10">
+        <div class="absolute top-0 right-0 z-50 ">
+          <div class="h-4 w-screen bg-black">
+          </div>
+          <div class="from-black to-transparent w-screen h-8 z-50 bg-gradient-to-b">
+          </div>
         </div>
-        <div class="from-black to-transparent w-screen h-8 z-50 bg-gradient-to-b">
+        <div class="absolute bottom-0 right-0 z-50">
+          <div class="from-black to-transparent w-screen h-8 z-50 bg-gradient-to-t">
+          </div>
+          <div class="h-4 w-screen bg-black">
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-0 right-0 z-50 ">
-        <div class="from-black to-transparent w-screen h-8 z-50 bg-gradient-to-t">
-        </div>
-        <div class="h-4 w-screen bg-black">
-        </div>
-      </div>
 
-      <div class="transform name z-20 rotate-90">
-        Anna
+        <div class="transform name z-20 rotate-90">
+          Hey
+        </div>
+      </div>
+      <div id="images" class="text-base z-10 absolute -top-100vh left-0 -z-10">
+        <ImagesBackground />
+      </div>
+      <div id="end-point" class="bg-red-500 absolute -bottom-50vh h-50vh w-full"></div>
+    </div>
+    <div class="h-100vh">
+      <div class="flex items-center justify-center">
+        <div class="bg-blue-500 py-2 px-4 rounded-xl text-base max-w-max goto-button text-white absolute">
+          Goto Site
+        </div>
       </div>
     </div>
-    <div id="images" class="text-base z-10 absolute -top-100vh left-0 -z-10">
-      <ImagesBackground />
-    </div>
-  </div>
-  <div class="h-100vh ">
   </div>
 </template>
 
