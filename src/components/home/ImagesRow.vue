@@ -1,6 +1,6 @@
 <template>
-  <div ref="row" class="flex flex-col gap-8 w-full absolute -top-4000px px-4">
-    <div ref="row1" class="flex flex-col gap-8 w-full">
+  <div ref="row" class="flex flex-col w-full absolute -top-4000px px-4 ">
+    <div ref="row1" class="flex flex-col gap-8 w-full mb-8">
       <SingleImage
         v-for="image in images"
         :key="image.id"
@@ -8,7 +8,7 @@
       >
       </SingleImage>
     </div>
-    <div ref="row2" class="flex flex-col gap-8 w-full">
+    <div ref="row2" class="flex flex-col gap-8 w-full mb-8">
       <SingleImage
         v-for="image in images"
         :key="image.id"
@@ -16,7 +16,7 @@
       >
       </SingleImage>
     </div>
-    <div ref="row3" class="flex flex-col gap-8 w-full">
+    <div ref="row3" class="flex flex-col gap-8 w-full mb-8">
       <SingleImage
         v-for="image in images"
         :key="image.id"

@@ -43,7 +43,7 @@ gsap.registerPlugin(ScrollToPlugin)
 
 const showNav = ref(false)
 const gotoWebsite = () => {
-  gsap.to(window, { duration: 5, scrollTo: '#content-div' })
+  gsap.to(window, { duration: 5, scrollTo: { y: '#content-div', offsetY: 250 } })
 }
 onMounted(() => {
   const snapV = [0, 1]

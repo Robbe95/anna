@@ -5,9 +5,9 @@
   >
     <transition name="fade" mode="out-in">
       <div v-if="showNav" class="flex flex-row gap-4  relative ">
-        <div>Home</div>
-        <div>Gallery</div>
-        <div>Contact</div>
+        <a href="/" class="font-bold">Home</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
       </div>
       <div v-else class=" relative" @click="gotoWebsite">
         Go to website

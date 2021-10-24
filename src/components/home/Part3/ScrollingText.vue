@@ -1,5 +1,5 @@
 <template>
-  <div class="scrolling-text-trigger" style="height: 3000px">
+  <div class="scrolling-text-trigger" style="height: 2300px">
     <div class="text-primary whitespace-nowrap overflow-y-hidden transform translate-x-[65%] scrolling-text font-bold" style="font-size: 500px;">
       Precious moments
     </div>

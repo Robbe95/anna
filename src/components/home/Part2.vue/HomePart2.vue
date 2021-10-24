@@ -1,7 +1,7 @@
 <template>
-  <div class=" text-white mt-60 justify-center text-center md:text-left md:px-40 px-4  ">
+  <div id="content-div" class=" text-white mt-60 justify-center text-center md:text-left md:px-40 px-4  ">
     <div
-      class=" text-5xl flex flex-col items-center justify-center"
+      class=" text-5xl flex flex-col items-center justify-center md:items-start"
     >
       <div class="hi-icon opacity-0 max-w-max mb-20">
         👋

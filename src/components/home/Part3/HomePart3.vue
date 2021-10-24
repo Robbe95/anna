@@ -1,5 +1,8 @@
 <template>
-  <div class=" text-white mt-60 px-2 text-center md:px-40 flex flex-col gap-20 items-center justify-center">
+  <div class=" text-white mt-60 px-2 text-center md:px-40 flex flex-col gap-20 items-center justify-center relative">
+    <div class="absolute right-0 top-20">
+      <img src="@/assets/images/circle.svg" />
+    </div>
     <div class="flex items-center flex-col gap-3">
       <div class="text-5xl">
         Money <span class="relative strike-center">money</span> money
