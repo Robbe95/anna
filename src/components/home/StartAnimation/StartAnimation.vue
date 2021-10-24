@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-  <div id="content-div" class="h-100vh">
+  <div id="content-div z-99">
     <div class="flex items-center justify-center">
       <HomeNavigation :show-nav="showNav" @gotoWebsite="gotoWebsite" />
     </div>

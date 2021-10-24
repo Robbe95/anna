@@ -10,6 +10,10 @@ export default defineConfig({
   plugins: [
     typography(),
   ],
+  shortcuts: {
+    'btn-primary': 'font-bold px-10 py-2 bg-white text-black rounded-full transition-all duration-500 hover:(bg-primary text-white)',
+    'btn-secondary': 'font-bold px-10 py-2 bg-primary text-white rounded-full transition-all duration-500 hover:(bg-white text-black)',
+  },
   theme: {
     extend: {
       colors: {

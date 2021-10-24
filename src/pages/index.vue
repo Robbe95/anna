@@ -3,8 +3,11 @@
 </script>
 
 <template>
-  <div class="relative bg-background overflow-x-hidden">
+  <div class="relative bg-background overflow-hidden">
     <StartAnimation />
+    <HomePart2 />
+    <HomePart3 />
+    <HomePart4 />
   </div>
 </template>
 
