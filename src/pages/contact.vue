@@ -4,10 +4,7 @@
 
 <template>
   <div class="relative bg-background overflow-hidden">
-    <StartAnimation />
-    <HomePart2 />
-    <HomePart3 />
-    <HomePart4 />
+    <ContactPart1 />
   </div>
 </template>
 
@@ -15,7 +12,6 @@
 </style>
 
 <route lang="yaml">
-name: home
 meta:
   layout: home
 </route>

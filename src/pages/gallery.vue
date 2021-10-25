@@ -4,10 +4,7 @@
 
 <template>
   <div class="relative bg-background overflow-hidden">
-    <StartAnimation />
-    <HomePart2 />
-    <HomePart3 />
-    <HomePart4 />
+    <GalleryPart1 />
   </div>
 </template>
 
@@ -15,7 +12,7 @@
 </style>
 
 <route lang="yaml">
-name: home
+name: gallery
 meta:
   layout: home
 </route>

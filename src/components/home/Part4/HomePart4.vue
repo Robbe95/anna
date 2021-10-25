@@ -1,5 +1,8 @@
 <template>
   <div class="text-white relative">
+    <div class="absolute -top-10vh ">
+      <img src="@/assets/images/rectangle-left.svg" />
+    </div>
     <div class="md:pr-20 flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
       <div class="text-5xl flex flex-col gap-4 w-full md:w-1/2 md:pl-40 font-bold">
         <div>
