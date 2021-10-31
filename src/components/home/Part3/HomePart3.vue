@@ -3,17 +3,21 @@
     <div class="absolute right-0 top-20">
       <img src="@/assets/images/circle.svg" />
     </div>
-    <div class="flex items-center flex-col gap-3">
-      <div class="text-5xl">
-        Money <span class="relative strike-center">money</span> money
+    <div id="prices" class="text-white px-2 text-center md:px-40 flex flex-col gap-20 items-center justify-center relative">
+      <div class="flex items-center flex-col gap-3">
+        <div class="text-7xl font-bold">
+          Money <span class="relative strike-center italic">money</span> money
+        </div>
+        <div class="anna-font text-lg">
+          Onbetaalbare herinneringen
+        </div>
       </div>
-      Onbetaalbare herinneringen
-    </div>
-    <div class="min-w-50vw">
-      <PriceItem v-for="item in items" :key="item.name" :item="item" />
-    </div>
-    <div class="max-w-md text-center">
-      Alle fotos (& vermogensrechten) op deze website zijn eigendom van bvba fato en mogen op geen enkele manier gebruikt worden zonder toestemming.
+      <div class="min-w-50vw">
+        <PriceItem v-for="item in items" :key="item.name" :item="item" />
+      </div>
+      <div class="max-w-md text-center text-lg font-bold">
+        Alle fotos (& vermogensrechten) op deze website zijn eigendom van bvba fato en mogen op geen enkele manier gebruikt worden zonder toestemming.
+      </div>
     </div>
     <div>
       <ScrollingText />

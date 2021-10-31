@@ -6,8 +6,8 @@
       <div class="hi-icon opacity-0 max-w-max mb-20">
         👋
       </div>
-      <div class="intro-text text-5xl md:max-w-1/2 font-medium">
-        Hallo! Ik ben <span class="anna-font">Anna Leoni</span><br> en hou ervan om <br><span class=""><span class="changing-text">herinneringen</span> vast te leggen.</span>
+      <div class="intro-text text-5xl md:max-w-2/3 font-bold">
+        Hallo! Ik ben <span class="anna-font">Anna Leoni</span><br> en hou ervan om <br><span class=""><span class="changing-text italic">herinneringen</span> vast te leggen.</span>
       </div>
       <HomeInfoCard />
     </div>

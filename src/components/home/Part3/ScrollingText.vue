@@ -1,6 +1,6 @@
 <template>
   <div class="scrolling-text-trigger" style="height: 2700px">
-    <div class="text-primary whitespace-nowrap overflow-y-hidden transform translate-x-[65%] scrolling-text font-bold" style="font-size: 500px;">
+    <div class="text-primary whitespace-nowrap transform translate-x-[65%] scrolling-text anna-font overflow-x-visible" style="font-size: 500px;">
       Precious moments
     </div>
   </div>

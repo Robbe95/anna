@@ -24,6 +24,7 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  assetsInclude: ['**/*.jpg'],
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],

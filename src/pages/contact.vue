@@ -12,6 +12,7 @@
 </style>
 
 <route lang="yaml">
+name: contact
 meta:
   layout: home
 </route>

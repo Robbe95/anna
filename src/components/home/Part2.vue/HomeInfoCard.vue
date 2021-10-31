@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col md:flex-row justify-between mt-40 gap-30 md:gap-0 items-center">
-    <div class="text text-base md:w-1/2 text-left flex-none">
-      <div class="md:pr-20">
+    <div class="text text-base md:w-1/2 text-left flex-none font-medium">
+      <div class="md:pr-20 text-lg">
         De mooiste gebeurtenissen in ons leven willen we eeuwig koesteren:
         <br />
         huwelijken, geboortes, zwangerschappen, verjaardagen, communies, jubileums, pensioenfeesten,...
@@ -14,13 +14,15 @@
         <br /><br />
         Anna
       </div>
-      <div class="flex flex-row gap-6 mt-4">
-        <button class="btn-primary">
-          Galerij
-        </button>
-        <button class="btn-secondary">
+      <div class="flex flex-row gap-6 mt-4 text-lg">
+        <RouterLink class="btn-primary flex flex-row items-center gap-2" to="/gallery">
+          Gallerij
+          <ArrowIcon class="transform -rotate-45" />
+        </RouterLink>
+        <RouterLink class="btn-secondary flex flex-row items-center gap-2" to="/contact">
           Contact
-        </button>
+          <ArrowIcon class="transform -rotate-45" />
+        </RouterLink>
       </div>
     </div>
 
@@ -47,6 +49,7 @@
 
 <script setup>
 import { gsap } from 'gsap'
+import ArrowIcon from '~icons/bi/arrow-right-circle'
 const imageDiv1 = ref(null)
 const imageDiv2 = ref(null)
 

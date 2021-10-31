@@ -1,13 +1,13 @@
 <template>
   <div
-    class="absolute goto-button min-w-max bg-blue-500 bg-blue-500 py-2 px-4 rounded-3xl text-base text-white flex items-center width-trans justify-center cursor-pointer"
+    class="absolute goto-button min-w-max bg-blue-500 bg-blue-500 py-2 px-4 rounded-3xl text-base text-white flex items-center width-trans justify-center cursor-pointer -translate-x-1/2"
     :style="[showNav ?'width: 250px; max-width: 300px' : 'width: 150px; max-width: 300px' ]"
   >
     <transition name="fade" mode="out-in">
       <div v-if="showNav" class="flex flex-row gap-4  relative ">
         <a href="/" class="font-bold">Home</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/contact">Contact</a>
+        <a href="/gallery" class="opacity-50">Gallery</a>
+        <a href="/contact" class="opacity-50">Contact</a>
       </div>
       <div v-else class=" relative" @click="gotoWebsite">
         Go to website

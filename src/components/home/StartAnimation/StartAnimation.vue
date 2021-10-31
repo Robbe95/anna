@@ -9,7 +9,7 @@
       </div>
 
       <div class="transform name z-50 relative overflow-visible">
-        <div class="absolute name-text w-screen flex items-center justify-center transform rotate-270 anna-font z-50">
+        <div class="absolute name-text w-screen flex items-center justify-center transform rotate-270 anna-font z-50 min-w-max">
           Anna Leoni
         </div>
       </div>
@@ -80,15 +80,33 @@ onMounted(() => {
       scrub: 1,
     },
   })
+  ScrollTrigger.matchMedia({
+    '(min-width: 800px)': function() {
+      tlButton.addLabel('start')
+        .from('.goto-button', { duration: 1 })
+        .to('.goto-button', { x: '35vw', duration: 0.5 })
+        // .to('.goto-button', { x: '-50px', duration: 0.5 })
 
-  tlButton.addLabel('start')
-    .from('.goto-button', { duration: 1 })
-    .to('.goto-button', { x: '35vw', duration: 0.5 })
-    .call(() => {
-      showNav.value = !showNav.value
-    }, null, '>',
-    )
-    .to('.goto-button', { duration: 0.1 })
+        .call(() => {
+          showNav.value = !showNav.value
+        }, null, '>',
+        )
+        .to('.goto-button', { duration: 0.1 })
+    },
+    '(max-width: 799px)': function() {
+      tlButton.addLabel('start')
+        .from('.goto-button', { duration: 1 })
+      // .to('.goto-button', { x: '35vw', duration: 0.5 })
+        .to('.goto-button', { x: '-50px', duration: 0.5 })
+
+        .call(() => {
+          showNav.value = !showNav.value
+        }, null, '>',
+        )
+        .to('.goto-button', { duration: 0.1 })
+    },
+
+  })
 })
 </script>
 

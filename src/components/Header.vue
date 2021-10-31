@@ -11,9 +11,9 @@
       >
         <transition name="fade" mode="out-in">
           <div class="flex flex-row gap-4  relative ">
-            <a href="/" :class="{'font-bold' : routeName === 'home'}">Home</a>
-            <a href="/gallery" :class="{'font-bold' : routeName === 'gallery'}">Gallery</a>
-            <a href="/contact" :class="{'font-bold' : routeName === 'contact'}">Contact</a>
+            <a href="/" :class="[routeName === 'home' ? 'font-bold' : 'opacity-50' ]">Home</a>
+            <a href="/gallery" :class="[routeName === 'gallery' ? 'font-bold' : 'opacity-50' ]">Gallery</a>
+            <a href="/contact" :class="[routeName === 'contact' ? 'font-bold' : 'opacity-50' ]">Contact</a>
           </div>
         </transition>
       </div>

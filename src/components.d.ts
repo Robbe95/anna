@@ -16,6 +16,8 @@ declare module 'vue' {
     ContactPart1: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/contact/Part1/ContactPart1.vue')['default']
     'ContactPart1 copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/contact/Part1/ContactPart1 copy.vue')['default']
     Footer: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/Footer.vue')['default']
+    GalleryFilter: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/gallery/Part1/GalleryFilter.vue')['default']
+    GalleryFilterImages: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/gallery/Part1/GalleryFilterImages.vue')['default']
     GalleryPart1: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/gallery/Part1/GalleryPart1.vue')['default']
     Header: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/Header.vue')['default']
     HomeInfoCard: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part2.vue/HomeInfoCard.vue')['default']
