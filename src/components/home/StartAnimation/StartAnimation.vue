@@ -16,7 +16,7 @@
     </div>
     <div class="">
       <div class="relative h-200vh w-screen overflow-hidden">
-        <div id="images" class="text-base z-10 absolute -top-100vh left-0 -z-10 bottom-0">
+        <div id="images" class="text-base -z-10 absolute -top-100vh left-0 bottom-0">
           <ImagesBackground />
         </div>
       </div>
