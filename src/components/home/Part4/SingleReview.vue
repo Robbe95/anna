@@ -1,11 +1,9 @@
 <template>
   <div
     ref="imageDiv"
-    class="bg-dark-400
+    class="bg-[#1a1e2d]
       text-black
         shadow-lg
-        border-1px
-      border-gray-500  h-full w-full
           flex items-center
         justify-center text-3xl
         image
@@ -13,9 +11,22 @@
         w-full
         z-0
         image
+        flex flex-col gap-4
+        px-10
+        overflow-hidden
       "
   >
-    {{ image.id }}
+    <div class="flex flex-row gap-8 items-center w-full ">
+      <div class="flex-none h-30 w-30">
+        <img class="h-30 w-30 object-cover rounded-2xl flex-none" :src="review.image" />
+      </div>
+      <div class="text-white text-lg text-left">
+        {{ review.name }}
+      </div>
+    </div>
+    <div class="text-white text-sm">
+      {{ review.text }}
+    </div>
   </div>
 </template>
 
@@ -23,7 +34,7 @@
 import { gsap } from 'gsap'
 
 const props = defineProps({
-  image: Object,
+  review: Object,
 })
 const imageDiv = ref(null)
 
