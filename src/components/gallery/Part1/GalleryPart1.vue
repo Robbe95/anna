@@ -19,12 +19,12 @@
             @leave="leave"
           >
             <img
-              v-for="(shownImage, key) in shownImages"
-              :key="key + shownImage"
+              v-for="(shownImage, key, index) in shownImages"
+              :key="index + shownImage.default"
               class="image border-1px border-gray-300 border-opacity-30 object-cover child-top-scrollbar"
-              :src="shownImage"
-              :data-index="key"
-              :data-entries="shownImages.length"
+              :src="shownImage.default"
+              :data-index="index + 1"
+              :data-entries="Object.keys(shownImages).length"
             />
           </transition-group>
         </div>
@@ -48,10 +48,10 @@ import { gsap } from 'gsap'
 import ArrowIcon from '~icons/bi/arrow-right-circle'
 
 import { useGallery } from '@/stores/gallery'
+
 const galleryStore = useGallery()
 const shownImages = computed(() => galleryStore.currentImages.images)
 let isScrolling = false
-
 const beforeEnter = (el) => {
   el.style.opacity = 0
 }
@@ -76,7 +76,7 @@ const leave = (el, done) => {
   gsap.to(el, {
     opacity: 0,
     y: -20,
-    delay: Math.min(maxDelay, 0.5 - el.dataset.index * Math.max(0.15, delayHelper)),
+    delay: Math.min(maxDelay, 0.1 - el.dataset.index * Math.max(0.15, delayHelper)),
     onComplete: done,
   })
 }

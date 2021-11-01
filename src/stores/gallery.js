@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { WeddingImages, CommercialImages, CommunionImages, FamilyImages, GirlsnightImages, KidsImages, PregnantImages } from '@/logic/images.js'
+import { WeddingImages, CommercialImages, CommunionImages, FamilyImages, GirlsnightImages, KidsImages, PregnantImages, AllImages } from '@/logic/images.js'
 // useStore could be anything like useUser, useCart
 // the first argument is a unique id of the store across your application
 
@@ -7,6 +7,10 @@ export const useGallery = defineStore('gallery', {
   // other options...
   state: () => ({
     allImages: [
+      {
+        category: 'Alles',
+        images: AllImages,
+      },
       {
         category: 'Huwelijk',
         images: WeddingImages,

@@ -39,9 +39,11 @@ declare module 'vue' {
     PriceItem: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part3/PriceItem.vue')['default']
     'PriceItem copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part3.vue/PriceItem copy.vue')['default']
     README: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/README.md')['default']
+    ReviewRow: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part4/ReviewRow.vue')['default']
     ScrollingText: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part3/ScrollingText.vue')['default']
     SingeImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/SingeImage.vue')['default']
     SingleImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/SingleImage.vue')['default']
+    SingleReview: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part4/SingleReview.vue')['default']
     StartAnimation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/StartAnimation/StartAnimation.vue')['default']
   }
 }

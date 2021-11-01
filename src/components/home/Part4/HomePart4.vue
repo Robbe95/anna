@@ -17,8 +17,8 @@
         </div>
         <div class="z-20 absolute bottom-0 from-background bg-gradient-to-t w-full h-10 to-transparent">
         </div>
-        <ImagesRow class="right-0 md:w-1/2 w-full" />
-        <ImagesRow class="mt-20vh hidden md:block md:w-1/2" :reverse="true" />
+        <ReviewRow class="right-0 md:w-1/2 w-full" />
+        <ReviewRow class="mt-20vh hidden md:block md:w-1/2" :reverse="true" />
       </div>
     </div>
   </div>

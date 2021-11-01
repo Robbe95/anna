@@ -15,7 +15,7 @@
         image
       "
   >
-    <img class="object-cover w-full h-full" :src="image" />
+    {{ image.id }}
   </div>
 </template>
 
@@ -23,7 +23,7 @@
 import { gsap } from 'gsap'
 
 const props = defineProps({
-  image: String,
+  image: Object,
 })
 const imageDiv = ref(null)
 

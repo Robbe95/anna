@@ -1,28 +1,28 @@
 <template>
   <div ref="row" class="flex flex-col w-full absolute -top-4000px px-4 ">
     <div ref="row1" class="flex flex-col gap-8 w-full mb-8">
-      <SingleImage
+      <SingleReview
         v-for="image in images"
         :key="image.id"
         :image="image"
       >
-      </SingleImage>
+      </SingleReview>
     </div>
     <div ref="row2" class="flex flex-col gap-8 w-full mb-8">
-      <SingleImage
+      <SingleReview
         v-for="image in images"
         :key="image.id"
         :image="image"
       >
-      </SingleImage>
+      </SingleReview>
     </div>
     <div ref="row3" class="flex flex-col gap-8 w-full mb-8">
-      <SingleImage
+      <SingleReview
         v-for="image in images"
         :key="image.id"
         :image="image"
       >
-      </SingleImage>
+      </SingleReview>
     </div>
   </div>
 </template>
@@ -39,12 +39,9 @@ const props = defineProps({
     type: Number,
     default: 30,
   },
-  images: {
-    type: Array,
-    default: null,
-  },
 })
 
+const images = [{ id: 1, spot: 2 }, { id: 2, spot: 3 }, { id: 3, spot: 1 }, { id: 4, spot: 1 }, { id: 5, spot: 1 }, { id: 6, spot: 1 }, { id: 7, spot: 1 }]
 const row = ref(null)
 const row1 = ref(null)
 const row2 = ref(null)
