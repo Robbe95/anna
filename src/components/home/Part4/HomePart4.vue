@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import WeddingImage1 from '@/assets/images/gallery/wedding/image1.png'
+import WeddingImage1 from '@/assets/images/gallery/wedding/8.png'
 
 const reviews = [
   {
