@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-between items-center text-white">
+  <div class="flex flex-col md:flex-row justify-between items-center text-white mt-8 md:mt-0">
     <div class="md:w-1/3">
     </div>
     <div class="anna-font text-4xl text-center md:w-1/3 flex items-center justify-center">

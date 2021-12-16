@@ -3,7 +3,7 @@
 
 <template>
   <div class="flex flex-col md:flex-row justify-between bg-background text-white text-lg px-4 md:px-40 py-20 items-center text-center md:text-left ">
-    <div class="md:w-1/2 flex flex-col gap-4 mb-10  md:mb-0">
+    <div class="md:w-1/2 flex flex-col gap-4 mb-10  md:mb-0 md:items-start md:justify-start items-center justify-center">
       <div class="anna-font text-4xl">
         <img src="@/assets/logo.svg" alt="logo" class="h-1.5rem" />
       </div>

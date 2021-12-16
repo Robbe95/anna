@@ -12,7 +12,7 @@
           Onbetaalbare herinneringen
         </div>
       </div>
-      <div class="min-w-50vw">
+      <div class="min-w-90vw md:min-w-50vw">
         <PriceItem v-for="item in items" :key="item.name" :item="item" />
       </div>
       <div class="max-w-md text-center text-lg">

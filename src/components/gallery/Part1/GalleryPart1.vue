@@ -29,7 +29,7 @@
           </transition-group>
         </div>
       </div>
-      <div class="flex flex-row gap-4 px-20  md:px-40 py-8 text-lg">
+      <div class="flex flex-col md:flex-row gap-4 px-20  md:px-40 py-8 text-lg text-center items-center">
         <RouterLink class="btn-primary flex flex-row items-center gap-2" to="/?scrollTo=prices">
           Prijzen
           <ArrowIcon class="transform -rotate-45" />

@@ -26,7 +26,6 @@ const props = defineProps({
 })
 const isLoading = ref(true)
 const images = allImages.value.map((imageSrc) => {
-  console.log(imageSrc)
   return new Promise((resolve, reject) => {
     const img = new Image()
     img.src = imageSrc
@@ -36,7 +35,6 @@ const images = allImages.value.map((imageSrc) => {
 })
 
 Promise.all(images).then(() => {
-  console.log('Images loaded!')
   isLoading.value = false
   galleryStore.homepageLoading = false
 }).catch((error) => {

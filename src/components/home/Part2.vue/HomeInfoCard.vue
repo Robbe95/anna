@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-between mt-40 gap-30 md:gap-0 items-center">
+  <div class="flex flex-col md:flex-row justify-between mt-40 gap-30 md:gap-0 items-center ">
     <div class="text text-base md:w-1/2 text-left flex-none font-medium">
-      <div class="md:pr-20 text-lg">
+      <div class="md:pr-20 text-lg px-4">
         De mooiste gebeurtenissen in ons leven willen we eeuwig koesteren:
         <br />
         huwelijken, geboortes, zwangerschappen, verjaardagen, communies, jubileums, pensioenfeesten,...
@@ -14,12 +14,12 @@
         <br /><br />
         Anna
       </div>
-      <div class="flex flex-row gap-6 mt-4 text-lg">
-        <RouterLink class="btn-primary flex flex-row items-center gap-2" to="/gallery">
+      <div class="flex md:flex-row flex-col gap-6 mt-4 text-lg md:justify-start justify-center items-center">
+        <RouterLink class="btn-primary flex flex-row items-center gap-2 max-w-max" to="/gallery">
           Gallerij
           <ArrowIcon class="transform -rotate-45" />
         </RouterLink>
-        <RouterLink class="btn-secondary flex flex-row items-center gap-2" to="/contact">
+        <RouterLink class="btn-secondary flex flex-row items-center gap-2 max-w-max" to="/contact">
           Contact
           <ArrowIcon class="transform -rotate-45" />
         </RouterLink>

@@ -7,7 +7,7 @@
         👋
       </div>
       <div class="intro-text text-5xl md:max-w-2/3 font-semibold">
-        <div class="flex flex-row gap-2.5 items-center">
+        <div class="flex flex-col md:flex-col gap-2.5 items-center">
           <div>Hallo! Ik ben</div>
           <img src="@/assets/logo.svg" alt="logo" class="h-2.5rem" />
         </div>

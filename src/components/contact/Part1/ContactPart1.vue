@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-20 md:px-40 relative z-20 min-h-screen">
+  <div class="px-4 md:p-20 md:px-40 relative z-20 min-h-screen mb-10">
     <div class="z-50 relative">
       <Header class="z-50" />
     </div>
@@ -12,8 +12,8 @@
       <div>
         <ContactForm />
       </div>
-    </div>
-    <div class="z-20 absolute bottom-0 from-background bg-gradient-to-t w-screen -left-10 h-10 to-transparent">
+      <div class="z-20 absolute bottom-0 from-background bg-gradient-to-t w-screen md:-left-10 left-0 h-10 to-transparent">
+      </div>
     </div>
   </div>
 </template>

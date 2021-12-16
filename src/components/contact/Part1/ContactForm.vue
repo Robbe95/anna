@@ -32,8 +32,8 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row justify-end mt-6 md:mt-0">
-          <button class="btn-primary transition-all" :disabled="!formReady || formLoading" :class="[formReady && !formLoading ? 'opacity-100': 'opacity-40']" @click="sendForm()">
+        <div class="flex flex-row justify-end mt-6 md:mt-0 z-50">
+          <button class="btn-primary transition-all z-50" :disabled="!formReady || formLoading" :class="[formReady && !formLoading ? 'opacity-100': 'opacity-40']" @click="sendForm()">
             <div v-if="formLoading" class="lds-dual-ring"></div>
             <div v-else>
               Versturen
