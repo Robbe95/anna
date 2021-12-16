@@ -21,6 +21,7 @@
 
 <script setup>
 import { gsap } from 'gsap'
+import { useGallery } from '@/stores/gallery'
 
 const props = defineProps({
   image: String,
@@ -35,10 +36,15 @@ const rotation = gsap.utils.random(-10, 10, 0.01)
 const rotationY = gsap.utils.random(-0.2, 0.2, 0.01)
 const rotationX = gsap.utils.random(-0.2, 0.2, 0.01)
 
-onMounted(() => {
-  gsap.from(imageDiv.value, { opacity: 0, z, y, x, rotation, rotationY, rotationX, force3D: true, delay })
-})
+const galleryStore = useGallery()
 
+const loading = computed(() => galleryStore.homepageLoading)
+onMounted(() => {
+})
+watch(
+  () => loading.value,
+  () => gsap.from(imageDiv.value, { opacity: 0, z, y, x, rotation, rotationY, rotationX, force3D: true, delay }),
+)
 </script>
 
 <style scoped>
