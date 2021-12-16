@@ -10,7 +10,7 @@
 
       <div class="transform name z-50 relative overflow-visible">
         <div class="absolute name-text w-screen flex items-center justify-center transform rotate-270 anna-font z-50 min-w-max">
-          Anna Leoni
+          <img src="@/assets/logo.svg" alt="logo" class="h-3.5rem" />
         </div>
       </div>
     </div>
@@ -92,6 +92,7 @@ onMounted(() => {
         }, null, '>',
         )
         .to('.goto-button', { duration: 0.1 })
+        .to('#images', { opacity: 0, duration: 0.7 })
     },
     '(max-width: 799px)': function() {
       tlButton.addLabel('start')

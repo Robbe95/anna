@@ -1,14 +1,14 @@
 <template>
   <div class=" flex flex-row items-center justify-center w-full gap-2 group">
-    <div class="whitespace-nowrap transform transition group-hover:(font-bold scale-120)">
+    <div class="whitespace-nowrap transform transition group-hover:(font-semibold scale-120)">
       {{ item.name }}
     </div>
     <div class="h-1px w-full flex-1 bg-white">
     </div>
-    <div v-if="isNaN(item.price)" class="whitespace-nowrap transform transition group-hover:(font-bold scale-120)">
+    <div v-if="isNaN(item.price)" class="whitespace-nowrap transform transition group-hover:(font-semibold scale-120)">
       {{ item.price }}
     </div>
-    <div v-else class="transform transition group-hover:(font-bold scale-120)">
+    <div v-else class="transform transition group-hover:(font-semibold scale-120)">
       €{{ (item.price / 100).toFixed(2) }}
     </div>
   </div>

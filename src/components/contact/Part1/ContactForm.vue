@@ -5,7 +5,7 @@
         <div class="flex flex-col md:flex-row gap-12 text-white">
           <div class="flex flex-col md:w-1/4">
             <div class="h-2px bg-white w-full mb-6"></div>
-            <div class="font-bold text-xl mb-6">
+            <div class="font-semibold text-xl mb-6">
               Contact
             </div>
             <div class=" text-lg">
@@ -20,7 +20,7 @@
           </div>
           <div class="flex flex-col md:w-3/4">
             <div class="h-2px bg-primary w-full mb-6"></div>
-            <div class="font-bold text-xl mb-6">
+            <div class="font-semibold text-xl mb-6">
               Gecontacteerd worden
             </div>
             <div class="flex flex-col md:flex-row gap-4">
@@ -106,7 +106,7 @@ const sendForm = async() => {
       formIsSent.value = true
       formLoading.value = false
     }).catch((error) => {
-      console.log(error)
+      console.error(error)
       formLoading.value = false
     })
 }

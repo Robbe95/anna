@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AnimationBlock: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/AnimationBlock.vue')['default']
     CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
     CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
@@ -20,6 +21,7 @@ declare module 'vue' {
     GalleryFilterImages: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/gallery/Part1/GalleryFilterImages.vue')['default']
     GalleryPart1: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/gallery/Part1/GalleryPart1.vue')['default']
     Header: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/Header.vue')['default']
+    Hmm: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/hmm.vue')['default']
     HomeInfoCard: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part2.vue/HomeInfoCard.vue')['default']
     HomeNavigation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/HomeNavigation.vue')['default']
     HomePart2: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part2.vue/HomePart2.vue')['default']
@@ -32,6 +34,8 @@ declare module 'vue' {
     ImagesRow: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/ImagesRow.vue')['default']
     'ImagesRow copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/ImagesRow copy.vue')['default']
     Navigation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Navigation.vue')['default']
+    NewAnimationTest: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/NewAnimationTest.vue')['default']
+    'NewAnimationTest copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/NewAnimationTest copy.vue')['default']
     OldImagesBackground: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/old/OldImagesBackground.vue')['default']
     OldImagesRow: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/old/OldImagesRow.vue')['default']
     OldSingleImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/old/OldSingleImage.vue')['default']
@@ -45,6 +49,7 @@ declare module 'vue' {
     SingleImage: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/SingleImage.vue')['default']
     SingleReview: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Part4/SingleReview.vue')['default']
     StartAnimation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/StartAnimation/StartAnimation.vue')['default']
+    Test: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/Test.vue')['default']
   }
 }
 

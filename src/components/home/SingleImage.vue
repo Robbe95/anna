@@ -4,9 +4,9 @@
     class="bg-dark-400
       text-black
         shadow-lg
-        border-1px
-      border-gray-500  h-full w-full
+          h-full w-full
           flex items-center
+          rounded
         justify-center text-3xl
         image
         h-50vh

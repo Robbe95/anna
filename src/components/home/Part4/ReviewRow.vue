@@ -53,7 +53,6 @@ const props = defineProps({
   },
 })
 
-console.log(props.reviews)
 const row = ref(null)
 const row1 = ref(null)
 const row2 = ref(null)

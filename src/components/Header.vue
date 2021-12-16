@@ -2,8 +2,8 @@
   <div class="flex flex-col md:flex-row justify-between items-center text-white">
     <div class="md:w-1/3">
     </div>
-    <div class="anna-font text-4xl text-center md:w-1/3">
-      Anna Leoni
+    <div class="anna-font text-4xl text-center md:w-1/3 flex items-center justify-center">
+      <img src="@/assets/logo.svg" alt="logo" class="h-2rem" />
     </div>
     <div class="md:w-1/3 flex md:justify-end justify-center items-center mt-4 md:mt-0">
       <div
@@ -12,7 +12,7 @@
         <transition name="fade" mode="out-in">
           <div class="flex flex-row gap-4  relative ">
             <a href="/" :class="[routeName === 'home' ? 'font-bold' : 'opacity-50' ]">Home</a>
-            <a href="/gallery" :class="[routeName === 'gallery' ? 'font-bold' : 'opacity-50' ]">Gallery</a>
+            <a href="/gallery" :class="[routeName === 'gallery' ? 'font-bold' : 'opacity-50' ]">Galerij</a>
             <a href="/contact" :class="[routeName === 'contact' ? 'font-bold' : 'opacity-50' ]">Contact</a>
           </div>
         </transition>

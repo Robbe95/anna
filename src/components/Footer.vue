@@ -2,10 +2,10 @@
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row justify-between bg-background text-white text-lg px-4 md:px-40 py-20 items-center text-center md:text-left text-xl">
+  <div class="flex flex-col md:flex-row justify-between bg-background text-white text-lg px-4 md:px-40 py-20 items-center text-center md:text-left ">
     <div class="md:w-1/2 flex flex-col gap-4 mb-10  md:mb-0">
       <div class="anna-font text-4xl">
-        Anna Leoni
+        <img src="@/assets/logo.svg" alt="logo" class="h-1.5rem" />
       </div>
       <div class="flex flex-row gap-2 justify-center md:justify-start">
         <a class="h-8 w-8 bg-white rounded-full flex items-center justify-center transition duration-300 group hover:(bg-primary) cursor-pointer" href="https://www.instagram.com/annaleoni_momof4/">
@@ -20,8 +20,8 @@
       </div>
     </div>
     <div class="md:w-1/2 flex flex-col md:flex-row justify-between text-center md:text-right  md:mb-0">
-      <div class="flex md:items-end flex-col md:w-1/2 mb-10 md:mb-0 text-xl">
-        <div class="mb-2 font-bold">
+      <div class="flex md:items-end flex-col md:w-1/2 mb-10 md:mb-0 text-lg">
+        <div class="mb-2 font-semibold">
           Menu
         </div>
         <a href="/">Home</a>
@@ -29,7 +29,7 @@
         <a href="/contact">Contact</a>
       </div>
       <div class="md:w-1/2">
-        <div class="mb-2 font-bold">
+        <div class="mb-2 font-semibold">
           Contact
         </div>
         <div>

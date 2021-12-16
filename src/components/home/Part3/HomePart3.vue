@@ -5,7 +5,7 @@
     </div>
     <div id="prices" class="text-white px-2 text-center md:px-40 flex flex-col gap-20 items-center justify-center relative">
       <div class="flex items-center flex-col gap-3">
-        <div class="text-7xl font-bold">
+        <div class="text-7xl font-semibold">
           Money <span class="relative strike-center italic">money</span> money
         </div>
         <div class="anna-font text-lg">
@@ -15,7 +15,7 @@
       <div class="min-w-50vw">
         <PriceItem v-for="item in items" :key="item.name" :item="item" />
       </div>
-      <div class="max-w-md text-center text-lg font-bold">
+      <div class="max-w-md text-center text-lg">
         Alle fotos (& vermogensrechten) op deze website zijn eigendom van bvba fato en mogen op geen enkele manier gebruikt worden zonder toestemming.
       </div>
     </div>

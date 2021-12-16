@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-20 relative z-20 min-h-screen">
+  <div class=" p-20 md:px-40 relative z-20 min-h-screen">
     <div class="z-50 relative">
       <Header class="z-50" />
     </div>

@@ -4,12 +4,12 @@
       <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 text-25xl  opacity-10 -z-10 px-20 anna-font">
         Gallery
       </div>
-      <Header class="z-50 mb-32 p-20" />
-      <div class="text-4xl mb-12 px-20" @click="moveScrollbar('right')">
+      <Header class="z-50 mb-32 p-20 md:px-40" />
+      <div class="text-4xl mb-12 px-20 md:px-40 font-semibold" @click="moveScrollbar('right')">
         My camera loves <span class="italic">you</span>.
       </div>
-      <GalleryFilter class="px-20" @scrollLeft="moveScrollbar('left')" @scrollRight="moveScrollbar('right')" />
-      <div class="pl-20">
+      <GalleryFilter class="px-20 md:px-40" @scrollLeft="moveScrollbar('left')" @scrollRight="moveScrollbar('right')" />
+      <div class="pl-20 md:pl-40">
         <div class="mt-4 flex flex-row h-96 overflow-x-visible gap-8  no-scrollbar top-scrollbar pb-10  ">
           <transition-group
             name="fade"
@@ -21,7 +21,7 @@
             <img
               v-for="(shownImage, key, index) in shownImages"
               :key="index + shownImage.default"
-              class="image border-1px border-gray-300 border-opacity-30 object-cover child-top-scrollbar"
+              class="image rounded object-cover child-top-scrollbar"
               :src="shownImage.default"
               :data-index="index + 1"
               :data-entries="Object.keys(shownImages).length"
@@ -29,7 +29,7 @@
           </transition-group>
         </div>
       </div>
-      <div class="flex flex-row gap-4 px-20 py-8 text-lg">
+      <div class="flex flex-row gap-4 px-20  md:px-40 py-8 text-lg">
         <RouterLink class="btn-primary flex flex-row items-center gap-2" to="/?scrollTo=prices">
           Prijzen
           <ArrowIcon class="transform -rotate-45" />

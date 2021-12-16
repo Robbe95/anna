@@ -6,11 +6,11 @@
     <transition name="fade" mode="out-in">
       <div v-if="showNav" class="flex flex-row gap-4  relative ">
         <a href="/" class="font-bold">Home</a>
-        <a href="/gallery" class="opacity-50">Gallery</a>
+        <a href="/gallery" class="opacity-50">Galerij</a>
         <a href="/contact" class="opacity-50">Contact</a>
       </div>
       <div v-else class=" relative" @click="gotoWebsite">
-        Go to website
+        Ontdekken
       </div>
     </transition>
   </div>
