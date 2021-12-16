@@ -6,6 +6,7 @@ import { WeddingImages, CommercialImages, CommunionImages, FamilyImages, Girlsni
 export const useGallery = defineStore('gallery', {
   // other options...
   state: () => ({
+    homepageLoading: true,
     allImages: [
       {
         category: 'Alles',

@@ -33,6 +33,7 @@ declare module 'vue' {
     'ImagesBackground copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/ImagesBackground copy.vue')['default']
     ImagesRow: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/ImagesRow.vue')['default']
     'ImagesRow copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/ImagesRow copy.vue')['default']
+    Loader: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/Loader.vue')['default']
     Navigation: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/home/Navigation.vue')['default']
     NewAnimationTest: typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/NewAnimationTest.vue')['default']
     'NewAnimationTest copy': typeof import('C:/Users/robbe/Work/FunStuff/anna/src/components/test/NewAnimationTest copy.vue')['default']
