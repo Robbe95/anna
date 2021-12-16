@@ -102,10 +102,10 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg', 'anna.png'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Anna Leoni',
+        short_name: 'Anna Leoni',
         theme_color: '#ffffff',
         icons: [
           {
